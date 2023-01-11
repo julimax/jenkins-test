@@ -12,9 +12,12 @@ pipeline {
                 echo 'Testing..'
             }
         }
-        stage('Deploy') {
+        stage('Copy Build') {
             steps {
-                echo 'Deploying....'
+                mkdir test2  
+            }
+            steps {
+                cp /var/lib/jenkins/workspace/test/* /var/lib/jenkins/workspace/test2
             }
         }
     }
