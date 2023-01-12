@@ -16,13 +16,10 @@ pipeline {
         stage('Copy Build') {
             steps {
                 sh 'cd /var/lib/jenkins/jobs/test'
-            }
-            steps {
-                sh 'mkdir buildCopy'  
-            }
-            steps {
+                sh 'mkdir buildCopy'
                 sh 'cp /var/lib/jenkins/jobs/test/* /var/lib/jenkins/jobs/buildCopy'
             }
+            
             
         }
     }
