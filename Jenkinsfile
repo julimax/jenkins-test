@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'python -m pylint source/date.py'
+                sh 'python3 -m pylint source/date.py'
             }
 
            }
