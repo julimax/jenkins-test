@@ -1,3 +1,4 @@
+"""Module providingFunction printing python version."""
 import datetime
 
 date = datetime.datetime.now()
