@@ -15,7 +15,7 @@ pipeline {
            }
         stage('Copy Build') {
             steps {
-                sh 'mkdir /var/lib/jenkins/jobs/buildCopy'
+                sh 'mkdir -p /var/lib/jenkins/jobs/buildCopy'
                 sh 'cp -r /var/lib/jenkins/jobs/test/* /var/lib/jenkins/jobs/buildCopy'
             }
             
